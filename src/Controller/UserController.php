@@ -17,6 +17,7 @@ use Model\Draw;
 use Model\DrawManager;
 use Model\BodyPaint;
 use Model\BodyPaintManager;
+use Model\WallManager;
 
 /**
  * Class ItemController
