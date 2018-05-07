@@ -17,7 +17,8 @@ use Model\Draw;
 use Model\DrawManager;
 use Model\BodyPaint;
 use Model\BodyPaintManager;
-
+use Model\Wall;
+use Model\WallManager;
 /**
  * Class ItemController
  *
@@ -92,6 +93,18 @@ class UserController extends AbstractController
         $walls = $wallManager->selectAll();
 
         return $this->twig->render('User/wall.html.twig', ['walls' => $walls]);
+    }
+
+    public function about()
+    {
+
+        return $this->twig->render('User/about.html.twig');
+    }
+
+    public function contact()
+    {
+
+        return $this->twig->render('User/contact.html.twig');
     }
 
     /**

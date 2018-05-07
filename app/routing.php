@@ -16,15 +16,7 @@ $routes = [
         ['draw', '/dessin', 'GET'],
         ['bodypaint', '/bodypainting', 'GET'],
         ['wall', '/mural', 'GET'],
-        ['contact', '/contact', 'POST'],
+        ['about', '/l\'artiste', 'GET'],
+        ['contact', '/contact', 'GET'],
     ],
-
-    'Admin' => [ // Controller
-        ['login', '/login', ['POST', 'GET']],  // action, url, method
-        ['admin', '/admin', ['POST', 'GET']],
-        ['logout', '/admin/logout', 'GET'],
-        ['benevolContentUpdated', '/admin/logged', 'POST'],
-        ['adminBenevol', '/admin/benevole', ['POST', 'GET']],
-        ['adminArtist', '/admin/artistes', ['POST', 'GET']],
-    ]
 ];
