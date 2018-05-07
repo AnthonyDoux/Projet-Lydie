@@ -21,6 +21,7 @@ abstract class AbstractManager
     protected $table;
     protected $className;
 
+
     /**
      *  Initializes Manager Abstract class.
      *
@@ -41,20 +42,21 @@ abstract class AbstractManager
      */
     public function selectAll(): array
     {
-        return $this->pdoConnection->query("SELECT * FROM `$this->table`", \PDO::FETCH_CLASS, $this->className)->fetchAll();
+        return $this->pdoConnection->query("SELECT * FROM `$this->table`")
+            ->fetchAll(\PDO::FETCH_CLASS, $this->className);
     }
 
     /**
      * Get one row from database by ID.
      *
-     * @param  int $id
+     * @param int $id
      *
      * @return array
      */
     public function selectOneById(int $id)
     {
         // prepared request
-        $statement = $this->pdoConnection->prepare("SELECT * FROM $this->table WHERE id=:id");
+        $statement = $this->pdoConnection->prepare("SELECT * FROM `$this->table` WHERE id=:id");
         $statement->setFetchMode(\PDO::FETCH_CLASS, $this->className);
         $statement->bindValue('id', $id, \PDO::PARAM_INT);
         $statement->execute();
@@ -62,34 +64,4 @@ abstract class AbstractManager
         return $statement->fetch();
     }
 
-    /**
-     * DELETE on row in dataase by ID
-     *
-     * @param int $id
-     */
-    public function delete(int $id)
-    {
-        //TODO : Implements SQL DELETE request
-    }
-
-
-    /**
-     * INSERT one row in dataase
-     *
-     * @param Array $data
-     */
-    public function insert(array $data)
-    {
-        //TODO : Implements SQL INSERT request
-    }
-
-
-    /**
-     * @param int   $id   Id of the row to update
-     * @param array $data $data to update
-     */
-    public function update(int $id, array $data)
-    {
-        //TODO : Implements SQL UPDATE request
-    }
 }

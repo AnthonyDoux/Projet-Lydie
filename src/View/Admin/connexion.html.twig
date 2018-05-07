@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <form class="form-inline col-4 offset-4" method="POST" action="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <input class="col-12 my-2 form-control" name="email" type="email" placeholder="mail" aria-label="mail">
+                        <input class="col-12 my-2 form-control" name="password" type="password" placeholder="password" aria-label="password">
+                        <button class="col-4 offset-4 my-2 btn btn-outline-success" type="submit" name="loginBtn">Connect</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
