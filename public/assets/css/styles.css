@@ -1,0 +1,97 @@
+
+
+/**********JUMBOTRON STARTS************************************/
+
+.myJumbotron {
+	background-color: white;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.myBanner {
+	width: 100%;
+}
+
+/*************JUMBOTRON ENDS***********************************/
+
+/*************GALLERY STARTS***********************************/
+
+.homeGallery {
+	justify-content: center;
+}
+
+.hidnNav {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*******MEDIA QUERIES STARTS*************************************/
+
+@media screen and (max-width: 375px) {
+
+	.homeLink {
+		display: none;
+	}
+
+	.hidnNav{
+	  	display: block;
+	}
+
+	.myNav {
+	  	align-items: center;
+	  	border-top: solid black 1px;
+	  	border-bottom: solid black 1px;
+		
+	}
+}
+
+@media screen and (max-width: 667px) {
+
+	.homeLink {
+		display: none;
+	}
+
+	.hidnNav{
+	  	display: block;
+	}
+
+	.myNav {
+	  	align-items: center;
+	  	border-top: solid black 1px;
+	  	border-bottom: solid black 1px;
+		
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	.homeLink {
+		display: none;
+	}
+
+	.hidnNav{
+	  	display: block;
+	}
+
+	.myNav {
+	  	align-items: center;
+	  	border-top: solid black 1px;
+	  	border-bottom: solid black 1px;
+		
+	}
+}
+
+
+
+
+
+
+
