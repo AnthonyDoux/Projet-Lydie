@@ -12,6 +12,7 @@
 $routes = [
     'User' => [
         ['home', '/', 'GET'],
+        ['draw', '/dessin', 'GET'],
     ],
 
     'Admin' => [ // Controller

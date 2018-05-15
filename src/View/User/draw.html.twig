@@ -1,5 +1,84 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-   <h1>hello</h1>
-{% endblock %}
+<div class="container homeBar">
+   <div class="navigation">
+      <nav class="homeNav">
+         <ul class="menuBar justify-content-end">
+            <a href="#">Home</a>
+            <a href="#">Peinture</a>
+            <a href="#">Body Painting</a>
+            <a href="#">Mural</a>
+            <a href="#">L'Artiste</a>
+            <a href="#">Contact</a>
+         </ul>
+      </nav>
+   </div>
+</div>
+<div class="container">
+   <div class="row homeGallery">
+      <div class="col-lg-2 col-md-2 col-12 homeLink">
+         <a href="#" class="boxClick" data-toggle="modal" data-target="#myModal">
+            <img class="img-fluid img-thumbnail tiles" src="assets/images/img1.JPG" alt="">
+            <div class="">
+               <h4 class="rgba-black-light catOne">Dessin</h4>
+            </div>
+         </a>
+      </div>
+      <div class="col-lg-2  col-md-2 col-12 homeLink">
+         <a href="#" class="boxClick" data-toggle="modal" data-target="#myModal">
+            <img class="img-fluid img-thumbnail tiles" src="assets/images/img1.JPG" alt="">
+            <div class="">
+               <h4 class="rgba-black-light catOne">Peinture</h4>
+            </div>
+         </a>
+      </div>
+      <div class="col-lg-2  col-md-2 col-12 homeLink">
+         <a href="#" class="boxClick" data-toggle="modal" data-target="#myModal">
+            <img class="img-fluid img-thumbnail tiles" src="assets/images/img1.JPG" alt="">
+            <div class="">
+               <h4 class="rgba-black-light catOne">Body Painting</h4>
+            </div>
+         </a>
+      </div>
+      <div class="col-lg-2  col-md-2 col-12 homeLink">
+         <a href="#" class="boxClick" data-toggle="modal" data-target="#myModal">
+            <img class="img-fluid img-thumbnail tiles" src="assets/images/img1.JPG" alt="">
+            <div class="">
+               <h4 class="rgba-black-light catOne">Mural</h4>
+            </div>
+         </a>
+      </div>
+      <div class="hidnNav">
+         <div class="navbar-nav myNav">
+            <a class="nav-item nav-link text-dark clickNav" href="#">Dessin</a>
+            <a class="nav-item nav-link text-dark clickNav" href="#">Peinture</a>
+            <a class="nav-item nav-link text-dark clickNav" href="#">Body Painting</a>
+            <a class="nav-item nav-link text-dark clickNav" href="#">Mural</a>
+            <a class="nav-item nav-link text-dark clickNav" href="#">L'Artiste</a>
+         </div>
+      </div>
+   </div>
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <img class="img-fluid img-thumbnail tiles" src="assets/images/king-kong.png" alt="">
+               <div>
+                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+    {% endblock %}

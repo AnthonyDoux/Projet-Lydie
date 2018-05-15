@@ -24,6 +24,29 @@
 	display: none;
 }
 
+h4 {
+	opacity:0;
+	writing-mode:vertical-lr;
+	transform:scale(-1,-1);
+	color: black;
+	font-weight: bold;
+	justify-content: flex-end;
+	direction: rtl;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	margin-left: 25px;
+	font-size: 2em;
+}
+
+.boxClick:hover .catOne{
+	opacity: 1;
+}
+
+
+.boxClick:hover .tiles{
+	opacity:0.5;
+}
 
 
 
@@ -42,14 +65,14 @@
 	}
 
 	.hidnNav{
-	  	display: block;
+		display: block;
 	}
 
 	.myNav {
-	  	align-items: center;
-	  	border-top: solid black 1px;
-	  	border-bottom: solid black 1px;
-		
+		align-items: center;
+		border-top: solid black 1px;
+		border-bottom: solid black 1px;
+
 	}
 }
 
@@ -60,14 +83,14 @@
 	}
 
 	.hidnNav{
-	  	display: block;
+		display: block;
 	}
 
 	.myNav {
-	  	align-items: center;
-	  	border-top: solid black 1px;
-	  	border-bottom: solid black 1px;
-		
+		align-items: center;
+		border-top: solid black 1px;
+		border-bottom: solid black 1px;
+
 	}
 }
 
@@ -78,17 +101,16 @@
 	}
 
 	.hidnNav{
-	  	display: block;
+		display: block;
 	}
 
 	.myNav {
-	  	align-items: center;
-	  	border-top: solid black 1px;
-	  	border-bottom: solid black 1px;
-		
+		align-items: center;
+		border-top: solid black 1px;
+		border-bottom: solid black 1px;
+
 	}
 }
-
 
 
 

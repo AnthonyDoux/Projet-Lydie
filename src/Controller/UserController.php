@@ -21,4 +21,11 @@ class UserController extends AbstractController
 
         return $this->twig->render('User/index.html.twig', ['connected' => $_SESSION['connected']]);
     }
+
+    public function draw()
+    {
+
+
+        return $this->twig->render('User/draw.html.twig');
+    }
 }
